@@ -131,7 +131,7 @@ class GastoSchema(ma.Schema):
         fields = ('id_gastos','luz','agua', 'condominio')
 
 
-definição dos model para melhor documentação no Swagger
+# definição dos model para melhor documentação no Swagger
 compra_modo= api.model('Compra', {'id_compra':fields.Integer(required= True,
                                         description='Identificador da Compra',
                                         help="Campo obrigatório"),
