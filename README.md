@@ -104,6 +104,7 @@ E o site estará no ar.
 * Arrumar alguns campos do frontend e seus estilos
 * No Backend separar os arquivos de Classe
 * Upar o projeto no Docker utilizando os containers
+* Algumas melhorias no banco de dados
 
 ## Créditos
 
