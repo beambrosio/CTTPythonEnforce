@@ -57,14 +57,22 @@ mas se o fizerem, é bom
 ## Para o projeto funcionar
 
 - No diretório BackEnd, criar uma virtual enviroment
- ``` python -m venv [NOME_DIRETORIO]  ```
- ``` cd [NOME_DIRETORIO] ```
- ``` .\Scripts\Activate ```
+``` 
+python -m venv [NOME_DIRETORIO] 
+```
+``` 
+cd [NOME_DIRETORIO]
+```
+``` 
+.\Scripts\Activate
+```
 
 E seu virtual enviroment estará funcionando
 instalar todos as bibliotecas necessarias através:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 Rodar o arquivo e o Swagger estará funcionando com toda a documentação do projeto
 
 - No diretorio do Frontend
@@ -73,6 +81,6 @@ npm install
 ```
 
 ```
- ng serve --open 
+ng serve --open 
 ```
 E o site estará no ar.
