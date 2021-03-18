@@ -68,6 +68,11 @@ instalar todos as bibliotecas necessarias através:
 Rodar o arquivo e o Swagger estará funcionando com toda a documentação do projeto
 
 - No diretorio do Frontend
-``` npm install ```
-``` ng serve --open ```
+``` 
+npm install 
+```
+
+```
+ ng serve --open 
+```
 E o site estará no ar.
