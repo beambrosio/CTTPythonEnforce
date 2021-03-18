@@ -306,10 +306,12 @@ class getdatacompra(Resource):
 class getdataidcompra(Resource):
     @api.doc(responses={ 200: 'OK', 400: 'Argumento Invalido', 500: 'Error'}, 
 			 params={ 'id_compra': 'Entre com o ID que deseja PESQUISAR'})
+
     def get(self, id_compra):
         try:
             compra = Compras.query.get(id_compra) #pegando o id da compra
             return jsonify(compra_schema.dump(compra))
+
         except KeyError as e:
             buy.abort(500, e.__doc__, status = "Não conseguiu retornar a informação", statusCode = "500")
         except Exception as e:
@@ -320,6 +322,7 @@ class getdataidcompra(Resource):
 class postdatacompra(Resource):
     @api.doc(responses={ 200: 'OK', 400: 'Argumento Inválido', 500: 'Error' })
     @api.expect(compra_modo) #utilizando o modelo definido anteriormente no codigo
+    
     def post(self): #metodo post
         try:
             compra = Compras( #pega os dados inseridos pelo usuario

@@ -24,6 +24,6 @@
     </div>
   </form>
   
-  <input class= 'btn btn-dark' type="button" (click)="alteraGasto(gasto.id_gasto, gasto.luz, gasto.agua, gasto.condominio)"
+  <input class= 'btn btn-dark' type="button" (click)="alteraGasto(gasto.id_gasto, gasto.luz, gasto.agua, gasto.condominio)" [routerLink]="['/gastos']" 
    value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/gastos" value="Voltar">
   </div>

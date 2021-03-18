@@ -1,5 +1,5 @@
 <div class="header">
-  <h2> Alterar Cadastro do Proprietario</h2>
+  <h2> Alterar Cadastro do Proprietário</h2>
   </div>
   
 
@@ -9,48 +9,48 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="nome_prop">Nome</label>
-      <input #nome_prop value="{{ proprietario.nome_prop }}" type="text" class="form-control" id="nome_prop" placeholder="nome_prop">
+      <input #nome_prop value="{{ proprietario.nome_prop }}" type="text" class="form-control" id="nome_prop" placeholder="Nome do Proprietário">
     </div>
     <div class="form-group col-md-6">
       <label for="data_nasc_prop">Data Nascimento</label>
-      <input #data_nasc_prop value="{{proprietario.data_nasc_prop | date: 'yyyy-MM-dd'}}" type="date" class="form-control" id="data_nasc_prop" placeholder="data_nasc_prop">
+      <input #data_nasc_prop value="{{proprietario.data_nasc_prop | date: 'yyyy-MM-dd'}}" type="date" class="form-control" id="data_nasc_prop" placeholder="Data de Nascimento">
     </div>
   </div>
   <div class = "form-row">
     <div class="form-group col-md-6">
       <label for="cpf_prop">CPF</label>
-      <input #cpf_prop value="{{proprietario.cpf_prop}}" type="text" class="form-control" id="cpf_prop" placeholder="cpf_prop">
+      <input #cpf_prop value="{{proprietario.cpf_prop}}" type="text" class="form-control" id="cpf_prop" placeholder="CPF do Proprietário">
     </div>
     <div class="form-group col-md-6">
       <label for="rg_prop">RG </label>
-      <input #rg_prop value="{{ proprietario.rg_prop }}" type="text" class="form-control" id="rg_prop" placeholder="rg_prop">
+      <input #rg_prop value="{{ proprietario.rg_prop }}" type="text" class="form-control" id="rg_prop" placeholder="RG do Proprietário">
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="est_civil_prop">Estado Civil</label>
-      <input #est_civil_prop value="{{ proprietario.est_civil_prop }}" type="text" class="form-control" id="est_civil_prop">
+      <input #est_civil_prop value="{{ proprietario.est_civil_prop }}" type="text" class="form-control" id="Estado Civil do Proprietário">
     </div>
     <div class="form-group col-md-4">
       <label for="tel_prop">Telefone</label>
-      <input #tel_prop value="{{ proprietario.tel_prop }}" id="tel_prop" class="form-control" id="tel_prop">
+      <input #tel_prop value="{{ proprietario.tel_prop }}" id="tel_prop" class="form-control" id="Telefone/Celular">
     </div>
     <div class="form-group col-md-2">
       <label for="formacao">Formação</label>
-      <input #formacao value="{{ proprietario.formacao }}" type="text" class="form-control" id="formacao">
+      <input #formacao value="{{ proprietario.formacao }}" type="text" class="form-control" id="Formação do Proprietário">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="temp_imovel">Tempo que possui o imovel</label>
-      <input #temp_imovel value="{{ proprietario.temp_imovel }}" type="text" class="form-control" id="temp_imovel" placeholder="temp_imovel">
+      <input #temp_imovel value="{{ proprietario.temp_imovel }}" type="text" class="form-control" id="temp_imovel" placeholder="Tempo que possui o Imóvel">
     </div>
   </div>
   <input type="hidden" value="{{proprietario.id_prop}}" id="propid" name="propid" #propid>
 </form>
 
 <input class='btn btn-dark' type="button" (click)="alteraProprietario(proprietario.id_prop, proprietario.nome_prop, proprietario.data_nasc_prop, proprietario.cpf_prop, proprietario.rg_cliente, proprietario.est_civil_prop, proprietario.formacao,
-proprietario.tel_prop, proprietario.temp_imovel)"  value="Salvar"> &nbsp;|&nbsp; <input class='btn btn-dark' type="button" routerLink="/proprietarios" value="Voltar">
+proprietario.tel_prop, proprietario.temp_imovel)" [routerLink]="['/proprietarios']" value="Salvar"> &nbsp;|&nbsp; <input class='btn btn-dark' type="button" routerLink="/proprietarios" value="Voltar">
 </div>
 

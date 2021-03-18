@@ -1,63 +1,63 @@
 <div class="header">
-    <h2> Atualizar cadastro de Imovel</h2>
+    <h2> Atualizar cadastro de Imóvel</h2>
     </div>
     
   
   <div class ="container-sm">
-    <h1>Cadastro Imovel</h1>
+    <h1>Cadastro Imóvel</h1>
   <form>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="rua">Rua</label>
-        <input #rua value="{{imovel.rua}}" type="text" class="form-control" id="rua" placeholder="rua">
+        <input #rua value="{{imovel.rua}}" type="text" class="form-control" id="rua" placeholder="Rua do Imóvel">
       </div>
       <div class="form-group col-md-6">
-        <label for="num">Num</label>
-        <input #num value="{{imovel.num}}" type="text" class="form-control" id="num" placeholder="num">
+        <label for="num">Número</label>
+        <input #num value="{{imovel.num}}" type="text" class="form-control" id="num" placeholder="Número do Imóvel">
       </div>
     </div>
     <div class = "form-row">
       <div class="form-group col-md-6">
         <label for="andar">Andar</label>
-        <input #andar value="{{imovel.andar}}" type="text" class="form-control" id="andar" placeholder="andar">
+        <input #andar value="{{imovel.andar}}" type="text" class="form-control" id="andar" placeholder="Se apartamento, o andar">
       </div>
       <div class="form-group col-md-6">
         <label for="bloco">Bloco </label>
-        <input #bloco value="{{imovel.bloco}}" type="text" class="form-control" id="bloco" placeholder="bloco">
+        <input #bloco value="{{imovel.bloco}}" type="text" class="form-control" id="bloco" placeholder="Se apartamento, bloco">
       </div>
     </div>
   
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="cidade">Cidade</label>
-        <input #cidade value="{{imovel.cidade}}" type="text" class="form-control" id="cidade">
+        <input #cidade value="{{imovel.cidade}}" type="text" class="form-control" id="Cidade do Imóvel">
       </div>
       <div class="form-group col-md-4">
         <label for="cep">Cep</label>
-        <input #cep value="{{imovel.cep}}" id="cep" class="form-control" id="cep">
+        <input #cep value="{{imovel.cep}}" id="cep" class="form-control" id="CEP do Imóvel">
       </div>
       <div class="form-group col-md-2">
         <label for="estado">Estado</label>
-        <input #estado value="{{imovel.estado}}" type="text" class="form-control" id="estado">
+        <input #estado value="{{imovel.estado}}" type="text" class="form-control" id="Estado do Imovel">
       </div>
     </div>
   
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="obs">Observações</label>
-        <input #obs value="{{imovel.obs}}" type="text" class="form-control" id="obs" placeholder="obs">
+        <input #obs value="{{imovel.obs}}" type="text" class="form-control" id="obs" placeholder="Observações a acrescentar">
       </div>
       <div class="form-group col-md-2">
         <label for="id_prop"> Proprietario</label>
-        <input value="{{imovel.id_prop}}" #id_prop type="text" class="form-control" id="id_prop" placeholder="id_prop">
+        <input value="{{imovel.id_prop}}" #id_prop type="text" class="form-control" id="id_prop" placeholder="Identificador do Proprietário">
       </div>
       <div class="form-group col-md-2">
         <label for="id_gastos">Gastos</label>
-        <input #id_gastos value="{{imovel.id_gastos}}" type="number" class="form-control" id="id_gastos" placeholder="id_gastos">
+        <input #id_gastos value="{{imovel.id_gastos}}" type="number" class="form-control" id="id_gastos" placeholder="Se tiver gastos, o identificador">
       </div>
     </div>
   </form>
   
   <input class= 'btn btn-dark' type="button" (click)="alteraImovel( imovel.id_imovel, imovel.rua, imovel.num, imovel.andar, imovel.bloco, imovel.cidade, imovel.cep, imovel.estado,
-    imovel.obs, imovel.id_prop, imovel.id_gastos)" value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/imoveis" value="Voltar">
+    imovel.obs, imovel.id_prop, imovel.id_gastos)" value="Inserir", [routerLink]="['/imoveis']" > &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/imoveis" value="Voltar">
   </div>
