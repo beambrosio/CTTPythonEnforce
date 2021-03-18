@@ -1,5 +1,5 @@
 # CTTPythonEnforce
-Projeto feito para a trila de Python da Campinas Tech Talents 2021 e processo seletivo da empresa Enforce. 
+Projeto feito para a trilha de Python da Campinas Tech Talents 2021 e processo seletivo da empresa Enforce. 
 
 ### Descrição do que foi pedido no projeto
 Pelo facilitador: Jeferson Leal
@@ -73,6 +73,12 @@ instalar todos as bibliotecas necessarias através:
 ```
 pip install -r requirements.txt
 ```
+No arquivo /main.py/ modificar a linha
+```
+'postgresql://[NOME_USER_DO_BANCO_DE_DADOS]:[SUA SENHA]@localhost/Imobiliaria' 
+```
+
+
 Rodar o arquivo e o Swagger estará funcionando com toda a documentação do projeto
 
 - No diretorio do Frontend
@@ -84,3 +90,27 @@ npm install
 ng serve --open 
 ```
 E o site estará no ar.
+
+## O que foi utilizado
+
+- Banco de dados: PostgreSQL através do PgAdmin4
+- Backend: Flask com API RestPlus
+- BackEnd conectando com o Banco de dados: SQLAlchemy
+- Documentação do Backend: Swagger
+- Frontend: Angular para conectar com o Backend
+- Estilos do Frontend: CSS, HTML, Bootstrap
+
+## TODO
+
+* Algumas funções no frontend que não estão 100%
+* Arrumar alguns campos do frontend e seus estilos
+* No Backend separar os arquivos de Classe
+* Upar o projeto no Docker utilizando os containers
+
+## Créditos
+
+- Ao professor Jeferson Leal por no meio tantos empecilhos sempre esteve lá com teu bom humor, tua paciencia de Jó e por sempre acreditar na gente!
+- A Campinas Tech Talents por ter feito um programa incrível durante uma pandemia, nos por algumas horas dos problemas do país
+- A Enforce por ter disponibilizado semanalmente palestrantes, e ter confiado que o Jeferson formaria profissionais aptos a empresa.
+
+/Beatriz Ambrosio - 2021 - qualquer dúvida: contato beamb0694@gmail.com/
