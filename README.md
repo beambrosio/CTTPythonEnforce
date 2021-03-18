@@ -3,7 +3,9 @@ Projeto feito para a trilha de Python da Campinas Tech Talents 2021 e processo s
 
 ## Sistema de venda de Imóveis
 
-Pelo facilitador: Jeferson Leal
+Pelo facilitador: Jeferson Leal 
+
+#### Especificações do Projeto
 Fazer um sistema (MVP 0) para cadastro de venda de Imóveis, tendo os seguintes critérios:
 
 - O sistema deverá cadastrar os Imóveis seguindo os requisitos abaixo:
