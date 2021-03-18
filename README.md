@@ -1,11 +1,9 @@
 # CTTPythonEnforce
 Projeto feito para a trilha de Python da Campinas Tech Talents 2021 e processo seletivo da empresa Enforce. 
 
-### Descrição do que foi pedido no projeto
+## Sistema de venda de Imóveis
+
 Pelo facilitador: Jeferson Leal
-
-#### Sistema de venda de Imóveis
-
 Fazer um sistema (MVP 0) para cadastro de venda de Imóveis, tendo os seguintes critérios:
 
 - O sistema deverá cadastrar os Imóveis seguindo os requisitos abaixo:
@@ -112,5 +110,6 @@ E o site estará no ar.
 - Ao professor Jeferson Leal por no meio tantos empecilhos sempre esteve lá com teu bom humor, tua paciencia de Jó e por sempre acreditar na gente!
 - A Campinas Tech Talents por ter feito um programa incrível durante uma pandemia, nos por algumas horas dos problemas do país
 - A Enforce por ter disponibilizado semanalmente palestrantes, e ter confiado que o Jeferson formaria profissionais aptos a empresa.
+- Aos colegas e amigos que sempre me ajudaram nas duvidas, me fizeram rir no meio da aula e sempre no bom humor, no carinho, na atenção!
 
 /Beatriz Ambrosio - 2021 - qualquer dúvida: contato beamb0694@gmail.com/
