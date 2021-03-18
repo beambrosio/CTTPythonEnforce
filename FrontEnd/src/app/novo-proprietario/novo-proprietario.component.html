@@ -1,0 +1,54 @@
+<div class="header">
+    <h2> Novo Cadastro de Proprietário</h2>
+    </div>
+    
+  
+  <div class ="container-sm">
+    <h1>Cadastro Proprietário</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nome_prop">Nome</label>
+        <input #nome_prop type="text" class="form-control" id="nome_prop" placeholder="nome_prop">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="data_nasc_prop">Data Nascimento</label>
+        <input #data_nasc_prop type="date" class="form-control" id="data_nasc_prop" placeholder="data_nasc_prop">
+      </div>
+    </div>
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="cpf_prop">CPF</label>
+        <input #cpf_prop type="text" class="form-control" id="cpf_prop" placeholder="cpf_prop">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="rg_prop">RG </label>
+        <input #rg_prop type="text" class="form-control" id="rg_prop" placeholder="rg_prop">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="est_civil_prop">Estado Civil</label>
+        <input #est_civil_prop type="text" class="form-control" id="est_civil_prop">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="tel_prop">Telefone</label>
+        <input #tel_prop id="tel_prop" class="form-control" id="tel_prop">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="formacao">Formação</label>
+        <input #formacao type="text" class="form-control" id="formacao">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="temp_imovel">Tempo que possui o imovel</label>
+        <input #temp_imovel type="text" class="form-control" id="temp_imovel" placeholder="temp_imovel">
+      </div>
+    </div>
+  </form>
+  
+  <input class= 'btn btn-dark' type="button" (click)="insereNovoProprietario(nome_prop.value, data_nasc_prop.value, cpf_prop.value, rg_prop.value, est_civil_prop.value, tel_prop.value, formacao.value,
+  temp_imovel.value)" value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/proprietarios" value="Voltar">
+  </div>

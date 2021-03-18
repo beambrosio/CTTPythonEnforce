@@ -1,0 +1,42 @@
+
+<div class="header">
+    <h2> Novo Cadastro de Compra</h2>
+    </div>
+    
+  
+  <div class ="container-sm">
+    <h1>Cadastro Compra</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="tipo_compra">Tipo de Compra</label>
+        <input #tipo_compra type="text" class="form-control" id="tipo_compra" placeholder="tipo_compra">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="banco_finan">Banco Financiado</label>
+        <input #banco_finan type="text" class="form-control" id="banco_finan" placeholder="banco_finan">
+      </div>
+    </div>
+    
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="preco">Preço</label>
+        <input #preco type="text" class="form-control" id="preco" placeholder="preco">
+      </div>
+    </div>  
+      <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="id_cliente">Cliente</label>
+        <input #id_cliente type="text" class="form-control" id="id_cliente" placeholder="id_cliente">
+      </div> 
+    </div>
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="id_imovel">Imovel</label>
+        <input #id_imovel type="text" class="form-control" id="id_imovel" placeholder="id_imovel">
+      </div> 
+    </div>
+</form>
+  <input class= 'btn btn-dark' type="button" (click)="insereNovaCompra(tipo_compra.value, banco_finan.value, preco.value, id_cliente.value, id_imovel.value)"
+   value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/gastos" value="Voltar">
+  </div>

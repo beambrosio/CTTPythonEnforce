@@ -1,0 +1,49 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<div class="header">
+<h2> Imoveis Cadastrados no Sistema</h2>
+</div>
+
+
+
+Pesquisa: <input type="text" id="pesquisa" name="pesquisa" #pesquisa (keyup)="0" >
+<br>
+{{pesquisa.value}}
+<br>
+<div overflow-x:auto>
+  <table class="table" >
+    <tr style="text-align: left;">
+      <th scope="col">ID</th>
+      <th scope="col">Rua</th>
+      <th scope="col">Num</th>
+      <th scope="col">Andar</th>
+      <th scope="col">Bloco</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">Cep</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Observações</th>
+      <th scope="col">Proprietario</th>
+      <th scope="col">Gastos</th>
+      
+    </tr>
+    <tr *ngFor="let imov of imoveis">
+        <td>{{ imov.id_imovel }}</td>
+        <td>{{ imov.rua }}</td>
+        <td>{{ imov.num }}</td>
+        <td>{{ imov.andar }}</td> 
+        <td>{{ imov.bloco }}</td>
+        <td>{{ imov.cidade }}</td>
+        <td>{{ imov.cep }}</td> 
+        <td>{{ imov.estado }}</td>
+        <td>{{ imov.obs }}</td>
+        <td>{{ imov.id_prop }}</td>
+        <td>{{ imov.id_gastos }}
+
+        <input type="hidden" #imovelid name="imovelid" id="imovelid" value="{{imov.id_imovel}}" />
+      </td>
+      <td><button class='btn btn-dark' [routerLink]="['/altera-imovel']" [queryParams]="{id:imov.id_imovel}">Alterar</button></td>
+      <td><button class='btn btn-dark' >Excluir</button></td>
+  </tr>
+</table>
+
+<button class='btn btn-dark' routerLink="/home">Home</button> &nbsp;|&nbsp; <button class= 'btn btn-dark'routerLink="/novo-imovel">Novo Imovel</button>

@@ -1,0 +1,86 @@
+  <div class="header">
+    <h2> Atualizar Cliente</h2>
+    </div>
+    
+  
+  <div class ="container-sm">
+    <h1>Atualizar Cliente</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nome_cliente">Nome</label>
+        <input #nome_cliente value="{{ cliente.nome_cliente }}" type="text" class="form-control" id="nome_cliente" placeholder="nome_cliente">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="data_nasc_cliente">Data Nascimento</label>
+        <input #data_nasc_cliente value="{{cliente.data_nasc_cliente" type="date" class="form-control" id="data_nasc_cliente" placeholder="data_nasc_cliente">
+      </div>
+    </div>
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="cpf_cliente">CPF</label>
+        <input #cpf_cliente value="{{cliente.cpf_cliente}}" type="text" class="form-control" id="cpf_cliente" placeholder="cpf_cliente">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="rg_cliente">RG </label>
+        <input #rg_cliente value="{{ cliente.rg_cliente }}" type="text" class="form-control" id="rg_cliente" placeholder="rg_cliente">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="est_civil_cliente">Estado Civil</label>
+        <input #est_civil_cliente value="{{ cliente.est_civil_cliente }}" type="text" class="form-control" id="est_civil_cliente">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="tel_cliente">Telefone</label>
+        <input #tel_cliente value="{{ cliente.tel_cliente }}" id="tel_cliente" class="form-control" id="tel_cliente">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="formacao_cliente">Formação</label>
+        <input #formacao_cliente value="{{ cliente.formacao_cliente }}" type="text" class="form-control" id="formacao_cliente">
+      </div>
+    </div>
+  
+    <h4>Endereço</h4>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="rua">Rua</label>
+        <input #rua value="{{ cliente.rua }}" type="text" class="form-control" id="rua" placeholder="rua">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="num"> Número</label>
+        <input #num value="{{ cliente.num }}" type="text" class="form-control" id="num" placeholder="num">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="andar">Andar</label>
+        <input #andar value="{{ cliente.andar }}" type="text" class="form-control" id="andar" placeholder="andar">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="bloco">Bloco</label>
+        <input #bloco value="{{ cliente.bloco }}" type="text" class="form-control" id="bloco" placeholder="bloco">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-2">
+        <label for="cep">CEP</label>
+        <input #cep value="{{ cliente.cep }}" type="text" class="form-control" id="cep" placeholder="cep">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cidade">Cidade</label>
+        <input #cidade value="{{ cliente.cidade }}" type="text" class="form-control" id="cidade" placeholder="cidade">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="estado">Estado</label>
+        <input #estado value="{{ cliente.estado }}" type="text" class="form-control" id="estado" placeholder="estado">
+        <input type="hidden" value="{{cliente.id_cliente}}" id="clienteid" name="clienteid" #clienteid>  
+      </div>
+    </div>
+  </form>
+
+  <input class='btn btn-dark' type="button" (click)="alteraCliente(cliente.id_cliente, cliente.nome_cliente, cliente.data_nasc_cliente, cliente, cliente.rg_cliente, cliente.est_civil_cliente, cliente.tel_cliente,
+  cliente.formacao_cliente, cliente.rua, cliente.num, cliente.andar, cliente.bloco, cliente.cidade, cliente.cep, cliente.estado)"  value="Salvar"> &nbsp;|&nbsp; <input class='btn btn-dark' type="button" routerLink="/clientes" value="Voltar">
+</div>
+<br>
+

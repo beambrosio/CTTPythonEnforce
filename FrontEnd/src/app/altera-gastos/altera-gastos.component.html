@@ -1,0 +1,29 @@
+<div class="header">
+    <h2> Novo Cadastro de Gastos</h2>
+    </div>
+    
+  
+  <div class ="container-sm">
+    <h1>Cadastro Gastos</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="luz">Conta de Luz</label>
+        <input #luz value="{{gasto.luz}}" type="text" class="form-control" id="luz" placeholder="Valor da conta de Luz">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="agua">Conta de Água</label>
+        <input #agua value="{{gasto.agua}}" type="text" class="form-control" id="agua" placeholder="Valor da conta d'agua">
+      </div>
+    </div>
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="condominio">Condominio</label>
+        <input #condominio value="{{gasto.condominio}}" type="text" class="form-control" id="condominio" placeholder="Valor do condominio">
+      </div>
+    </div>
+  </form>
+  
+  <input class= 'btn btn-dark' type="button" (click)="alteraGasto(gasto.id_gasto, gasto.luz, gasto.agua, gasto.condominio)"
+   value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/gastos" value="Voltar">
+  </div>

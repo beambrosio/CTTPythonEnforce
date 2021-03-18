@@ -1,0 +1,67 @@
+<div class="header">
+    <h2> Novo Cadastro de Imovel</h2>
+    </div>
+    
+  
+  <div class ="container-sm">
+    <h1>Cadastro Imovel</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="rua">Rua</label>
+        <input #rua type="text" class="form-control" id="rua" placeholder="rua">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="num">Num</label>
+        <input #num type="text" class="form-control" id="num" placeholder="num">
+      </div>
+    </div>
+    <div class = "form-row">
+      <div class="form-group col-md-6">
+        <label for="andar">Andar</label>
+        <input #andar type="text" class="form-control" id="andar" placeholder="andar">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="bloco">Bloco </label>
+        <input #bloco type="text" class="form-control" id="bloco" placeholder="bloco">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cidade">Estado Cidade</label>
+        <input #cidade type="text" class="form-control" id="cidade">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cep">Cep</label>
+        <input #cep id="cep" class="form-Cep" id="cep">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="estado">Estado</label>
+        <input #estado type="text" class="form-control" id="estado">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="obs">Observações</label>
+        <input #obs type="text" class="form-control" id="obs" placeholder="obs">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="id_prop"> Proprietario</label>
+        <input #id_prop type="text" class="form-control" id="id_prop" placeholder="id_prop">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="andar">Andar</label>
+        <input #andar type="number" class="form-control" id="andar" placeholder="andar">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="id_gastos">Gastos</label>
+        <input #id_gastos type="number" class="form-control" id="id_gastos" placeholder="id_gastos">
+      </div>
+    </div>
+  </form>
+  
+  <input class= 'btn btn-dark' type="button" (click)="insereNovoImovel(rua.value, num.value, andar.value, bloco.value, cidade.value, cep.value, estado.value,
+    obs.value, id_prop.value, id_gastos.value)" value="Inserir"> &nbsp;|&nbsp; <input class= 'btn btn-dark' type="button" routerLink="/imoveis" value="Voltar">
+  </div>

@@ -1,0 +1,39 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<div class="header">
+<h2> Compras Cadastradas no Sistema</h2>
+</div>
+
+
+
+Pesquisa: <input type="text" id="pesquisa" name="pesquisa" #pesquisa (keyup)="0" >
+<br>
+{{pesquisa.value}}
+<br>
+<div overflow-x:auto>
+  <table class="table" >
+    <tr style="text-align: left;">
+      <th scope="col">ID</th>
+      <th scope="col">Tipo da Compra</th>
+      <th scope="col">Banco do Financiamento</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Imovel</th>
+      
+    </tr>
+    <tr *ngFor="let compra of compras">
+        <td>{{ compra.id_compra }}</td>
+        <td>{{ compra.tipo_compra }}</td>
+        <td>{{ compra.banco_finan }}</td>
+        <td>{{ compra.preco }}</td>
+        <td>{{ compra.id_cliente}}</td>
+        <td>{{ compra.id_imovel}}
+
+        <input type="hidden" #compraid name="compraid" id="compraid" value="{{compra.id_compra}}" />
+      </td>
+      <td><button class='btn btn-dark' [routerLink]="['/altera-compra']" [queryParams]="{id:compra.id_compra}">Alterar</button></td>
+      <td><button class='btn btn-dark' >Excluir</button></td>
+  </tr>
+</table>
+
+<button class='btn btn-dark' routerLink="/home">Home</button> &nbsp;|&nbsp; <button class= 'btn btn-dark'routerLink="/nova-compra">Nova Compra</button>

@@ -1,0 +1,35 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<div class="header">
+<h2> Clientes Cadastrados no Sistema</h2>
+</div>
+
+
+
+Pesquisa: <input type="text" id="pesquisa" name="pesquisa" #pesquisa (keyup)="0" >
+<br>
+{{pesquisa.value}}
+<br>
+<div overflow-x:auto>
+  <table class="table" >
+    <tr style="text-align: left;">
+      <th scope="col">ID</th>
+      <th scope="col">Conta de Luz</th>
+      <th scope="col">Conta De Água</th>
+      <th scope="col">Condomínio</th>
+    </tr>
+    
+    <tr *ngFor="let gasto of gastos">
+        <td>{{ gasto.id_gastos }}</td>
+        <td>{{ gasto.luz }}</td>
+        <td>{{ gasto.agua }}</td>
+        <td>{{ gasto.condominio }}
+
+        <input type="hidden" #clienteid name="gastoid" id="gastoid" value="{{gasto.id_gastos}}" />
+      </td>
+      <td><button class='btn btn-dark' [routerLink]="['/altera-gastos']" [queryParams]="{id:gasto.id_gasto}">Alterar</button></td>
+      <td><button class='btn btn-dark' >Excluir</button></td>
+  </tr>
+</table>
+
+<button class='btn btn-dark' routerLink="/home">Home</button> &nbsp;|&nbsp; <button class= 'btn btn-dark'routerLink="/novo-gasto">Novo Gasto</button>
