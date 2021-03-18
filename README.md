@@ -112,4 +112,5 @@ E o site estará no ar.
 - A Enforce por ter disponibilizado semanalmente palestrantes, e ter confiado que o Jeferson formaria profissionais aptos a empresa.
 - Aos colegas e amigos que sempre me ajudaram nas duvidas, me fizeram rir no meio da aula e sempre no bom humor, no carinho, na atenção!
 
+* Totalmente desenvolvido por mim, porém sempre com ajuda do professor, amigos, e internet!
 /Beatriz Ambrosio - 2021 - qualquer dúvida: contato beamb0694@gmail.com/
