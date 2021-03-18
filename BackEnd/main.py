@@ -20,7 +20,7 @@ from datetime import date
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:larabia2@localhost/Imobiliaria' 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://[NOME_USER_DO_BANCO_DE_DADOS]:[SUA SENHA]@localhost/Imobiliaria' 
 CORS(app)
 
 ma = Marshmallow(app)
